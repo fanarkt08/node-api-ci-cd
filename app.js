@@ -8,9 +8,12 @@ app.post('/users' , (req, res) => {
     resizeTo.status(201).json(newUser);
 });
 
-const users = [{id: 1, name: 'John Doe'}, {id: 1, name: 'Jane Doe'}];
-app.get('/users', (req, res) => {
-    res.json(users);
+const express = require("express");
+const app = express();
+const PORT = 3000;
+
+app.use((req, res) => {
+    res.status(404).send("Error 404, page not found");
 });
 app.delete('/users/:id', (req, res)=>{
     const userId = parseInt(req.params.id);
