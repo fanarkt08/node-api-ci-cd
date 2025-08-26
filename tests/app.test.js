@@ -17,3 +17,10 @@ describe('Test the /status path', () => {
     });
 });
 
+describe('Test the /version path', () => {
+    test('It should respond with JSON containing API status', async() => {
+        const response = await request(app).get('/version');
+        expect(response.statusCode).toBe(200);
+        expect(response.body).toEqual({ version: '1.0.1' });
+    });
+});
