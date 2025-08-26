@@ -1,5 +1,31 @@
 {
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "name": "group-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanarkt08/group-node-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanarkt08/group-node-api/issues"
+  },
+  "homepage": "https://github.com/fanarkt08/group-node-api#readme"
 }
